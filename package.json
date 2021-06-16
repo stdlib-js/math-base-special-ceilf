@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-ceilf",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Round a single-precision floating-point number toward positive infinity.",
   "license": "Apache-2.0",
   "author": {
