@@ -1,0 +1,36 @@
+{
+  "name": "@stdlib/math-base-special-ceilf",
+  "version": "0.0.0",
+  "description": "Round a single-precision floating-point number toward positive infinity.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-ceilf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.ceil",
+    "ceil",
+    "round",
+    "integer",
+    "nearest",
+    "value",
+    "number",
+    "float",
+    "float32",
+    "single-precision",
+    "flt"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
