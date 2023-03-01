@@ -188,7 +188,7 @@ int main() {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/floorf`][@stdlib/math/base/special/floorf]</span><span class="delimiter">: </span><span class="description">round a single-precision floating-point numeric value toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/floorf`][@stdlib/math/base/special/floorf]</span><span class="delimiter">: </span><span class="description">round a single-precision floating-point numeric value toward negative infinity.</span>
 
 </section>
 
