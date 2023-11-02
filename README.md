@@ -35,43 +35,30 @@ limitations under the License.
 
 > Round a single-precision floating-point number toward positive infinity.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-ceilf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ceilf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-ceilf/tags). For example,
-
-```javascript
-ceilf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@v0.1.1-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ceilf = require( 'path/to/vendor/umd/math-base-special-ceilf/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ceilf;
-})();
-</script>
+var ceilf = require( '@stdlib/math-base-special-ceilf' );
 ```
 
 #### ceilf( x )
@@ -102,14 +89,9 @@ v = ceilf( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var ceilf = require( '@stdlib/math-base-special-ceilf' );
 
 var x;
 var i;
@@ -118,11 +100,6 @@ for ( i = 0; i < 100; i++ ) {
     x = (randu()*100.0) - 50.0;
     console.log( 'ceilf(%d) = %d', x, ceilf( x ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -131,7 +108,88 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/ceilf.h"
+```
+
+#### stdlib_base_ceilf( x )
+
+Rounds a single-precision floating-point number toward positive infinity.
+
+```c
+float y = stdlib_base_ceilf( 3.14f );
+// returns 4.0f
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+float stdlib_base_ceilf( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/ceilf.h"
+#include <stdio.h>
+
+int main( void ) {
+    const float x[] = { 3.14f, -3.14f, 0.0f, 0.0f/0.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_ceilf( x[ i ] );
+        printf( "ceilf(%f) = %f\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -186,8 +244,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-special-ceilf.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-special-ceilf
 
-[test-image]: https://github.com/stdlib-js/math-base-special-ceilf/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/math-base-special-ceilf/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/math-base-special-ceilf/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/math-base-special-ceilf/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-special-ceilf/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-special-ceilf?branch=main
@@ -218,7 +276,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/floorf]: https://github.com/stdlib-js/math-base-special-floorf/tree/umd
+[@stdlib/math/base/special/floorf]: https://github.com/stdlib-js/math-base-special-floorf
 
 <!-- </related-links> -->
 
