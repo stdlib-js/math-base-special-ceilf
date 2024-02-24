@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@esm/index.mjs';
+import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@v0.2.1-esm/index.mjs';
 ```
 
 #### ceilf( x )
@@ -80,7 +80,7 @@ v = ceilf( NaN );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@esm/index.mjs';
+import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@v0.2.1-esm/index.mjs';
 
 var x;
 var i;
