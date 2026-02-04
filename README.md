@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-ceilf/tags). For example,
+
+```javascript
 import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@v0.2.3-deno/mod.js';
 ```
 
@@ -76,7 +81,7 @@ v = ceilf( NaN );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@v0.2.3-deno/mod.js';
+import ceilf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceilf@deno/mod.js';
 
 var opts = {
     'dtype': 'float32'
