@@ -35,6 +35,22 @@ limitations under the License.
 
 > Round a single-precision floating-point number toward positive infinity.
 
+<section class="intro">
+
+The [ceiling function][ceiling-function] is defined as
+
+<!-- <equation class="equation" label="eq:ceiling_function" align="center" raw="y = \lceil x \rceil = \min\{ n \in \mathbb{Z} : n \geq x \}" alt="Ceiling function"> -->
+
+```math
+y = \lceil x \rceil = \min\{ n \in \mathbb{Z} : n \geq x \}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="installation">
 
 ## Installation
@@ -278,6 +294,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/math-base-special-ceilf/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-ceilf/main/LICENSE
+
+[ceiling-function]: https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
 
 <!-- <related-links> -->
 
